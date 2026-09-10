@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Amrutha P | Data Scientist & AI</title>
+
+  <meta
+    name="description"
+    content="Portfolio of Amrutha P, Data Scientist skilled in Python, SQL, Machine Learning, Deep Learning, NLP, Generative AI, LLMs, Transformers and Data Visualization."
+  />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    /* NAVBAR */
+
+    nav {
+      background: white;
+      border-bottom: 1px solid #e2e8f0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar {
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #4f46e5;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: #4f46e5;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 650px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .hero-small {
+      color: #4f46e5;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      font-size: 62px;
+      line-height: 1.05;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+      color: #4f46e5;
+    }
+
+    .hero p {
+      color: #64748b;
+      font-size: 18px;
+      max-width: 700px;
+    }
+
+    .hero-buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #4f46e5;
+      color: white;
+      border-color: #4f46e5;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .hero-box {
+      height: 360px;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #e0e7ff, #f3e8ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 100px;
+      box-shadow: 0 20px 60px rgba(15, 23, 42, 0.1);
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .section-subtitle {
+      color: #64748b;
+      margin-bottom: 35px;
+      max-width: 760px;
+    }
+
+    /* CARDS */
+
+    .card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 12px 35px rgba(15, 23, 42, 0.06);
+    }
+
+    /* ABOUT */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .about-text {
+      color: #475569;
+    }
+
+    .about-text strong {
+      color: #1e293b;
+    }
+
+    /* SKILLS */
+
+    .skill-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .skill {
+      background: #eef2ff;
+      color: #4338ca;
+      padding: 8px 13px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    /* PROJECTS */
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      font-size: 21px;
+    }
+
+    .project-card p {
+      color: #64748b;
+      font-size: 15px;
+    }
+
+    .tech {
+      color: #4f46e5 !important;
+      font-weight: bold;
+      font-size: 13px !important;
+    }
+
+    .project-btn {
+      display: inline-block;
+      width: fit-content;
+      margin-top: auto;
+      padding: 9px 16px;
+      background: #4f46e5;
+      color: white;
+      border-radius: 7px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .project-btn:hover {
+      background: #3730a3;
+    }
+
+    /* TRAINING */
+
+    .training-item {
+      border-left: 4px solid #4f46e5;
+      padding-left: 22px;
+    }
+
+    .training-item h3 {
+      margin-bottom: 5px;
+    }
+
+    .training-item p {
+      color: #64748b;
+      margin-top: 12px;
+    }
+
+    /* EDUCATION */
+
+    .education-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .education-card h3 {
+      margin-bottom: 8px;
+    }
+
+    .education-card p {
+      color: #64748b;
+    }
+
+    /* CERTIFICATIONS */
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    /* CONTACT */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .contact-card p {
+      color: #64748b;
+    }
+
+    .contact-item {
+      margin-top: 15px;
+      padding: 14px;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      background: #f8fafc;
+    }
+
+    .contact-item a:hover {
+      color: #4f46e5;
+    }
+
+    /* FOOTER */
+
+    footer {
+      border-top: 1px solid #e2e8f0;
+      padding: 30px 0;
+      text-align: center;
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 60px 0;
+      }
+
+      .hero h1 {
+        font-size: 44px;
+      }
+
+      .hero-box {
+        height: 280px;
+      }
+
+      .about-grid,
+      .project-grid,
+      .education-grid,
+      .cert-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav>
+    <div class="container navbar">
+
+      <a href="#home" class="logo">
+        Amrutha P
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#training">Training</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+
+  <section id="home">
+
+    <div class="container hero">
+
+      <div>
+
+        <div class="hero-small">
+          Data Scientist • Machine Learning • Artificial Intelligence
+        </div>
+
+        <h1>
+          Turning Data Into
+          <span>Actionable Insights</span>
+        </h1>
+
+        <p>
+          Aspiring Data Scientist with hands-on experience in Python, SQL,
+          Data Analysis, Machine Learning, Deep Learning, NLP, Generative AI,
+          LLMs and Transformers. Passionate about building practical
+          data-driven and AI-powered solutions.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#projects" class="btn btn-primary">
+            View Projects
+          </a>
+
+          <a href="mailto:amruthapreyala@gmail.com" class="btn">
+            Email Me
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/amrutha-preyala"
+            target="_blank"
+            class="btn"
+          >
+            LinkedIn
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-box">
+        🧠
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        About Me
+      </h2>
+
+      <p class="section-subtitle">
+        My technical background and journey into Data Science and Artificial Intelligence.
+      </p>
+
+      <div class="about-grid">
+
+        <div class="card about-text">
+
+          <p>
+            I am a motivated and detail-oriented aspiring
+            <strong>Data Scientist</strong> with practical experience in
+            <strong>
+              MSSQL, Python, NumPy, Pandas, Matplotlib, Seaborn,
+              Data Visualization, Data Cleaning, Exploratory Data Analysis,
+              Feature Engineering, Feature Selection, Machine Learning
+              Algorithms, Dimensionality Reduction and Time Series Analysis.
+            </strong>
+          </p>
+
+          <br />
+
+          <p>
+            I also have hands-on exposure to
+            <strong>
+              Artificial Intelligence, Generative AI, NLP, CNNs, LLMs,
+              Transformers, Hugging Face, RAG, LangChain and chatbot development.
+            </strong>
+            I enjoy transforming raw data into meaningful insights and
+            developing predictive and AI-powered solutions for real-world problems.
+          </p>
+
+          <br />
+
+          <p>
+            I am currently pursuing an
+            <strong>
+              Advanced Certification in Data Science & Artificial Intelligence
+              from iHUB DivyaSampark, IIT Roorkee through Intellipaat.
+            </strong>
+          </p>
+
+        </div>
+
+
+        <!-- SKILLS -->
+
+        <div class="card" id="skills">
+
+          <h3>
+            Technical Skills
+          </h3>
+
+          <div class="skill-container">
+
+            <span class="skill">Python</span>
+            <span class="skill">SQL</span>
+            <span class="skill">MSSQL</span>
+
+            <span class="skill">NumPy</span>
+            <span class="skill">Pandas</span>
+
+            <span class="skill">Matplotlib</span>
+            <span class="skill">Seaborn</span>
+            <span class="skill">Plotly</span>
+            <span class="skill">Power BI</span>
+
+            <span class="skill">Data Cleaning</span>
+            <span class="skill">EDA</span>
+            <span class="skill">Data Visualization</span>
+
+            <span class="skill">Feature Engineering</span>
+            <span class="skill">Feature Selection</span>
+
+            <span class="skill">Machine Learning</span>
+            <span class="skill">ML Algorithms</span>
+
+            <span class="skill">Linear Regression</span>
+            <span class="skill">Logistic Regression</span>
+            <span class="skill">Decision Tree</span>
+            <span class="skill">Random Forest</span>
+            <span class="skill">XGBoost</span>
+            <span class="skill">KNN</span>
+            <span class="skill">K-Means</span>
+
+            <span class="skill">Bagging</span>
+            <span class="skill">Boosting</span>
+            <span class="skill">AdaBoost</span>
+
+            <span class="skill">PCA</span>
+            <span class="skill">Dimensionality Reduction</span>
+
+            <span class="skill">Time Series</span>
+            <span class="skill">ARIMA</span>
+
+            <span class="skill">Deep Learning</span>
+            <span class="skill">Neural Networks</span>
+            <span class="skill">CNN</span>
+            <span class="skill">RNN</span>
+            <span class="skill">LSTM</span>
+
+            <span class="skill">NLP</span>
+            <span class="skill">Generative AI</span>
+            <span class="skill">LLMs</span>
+            <span class="skill">Transformers</span>
+            <span class="skill">Hugging Face</span>
+            <span class="skill">RAG</span>
+            <span class="skill">LangChain</span>
+
+            <span class="skill">Scikit-learn</span>
+            <span class="skill">TensorFlow</span>
+            <span class="skill">Keras</span>
+            <span class="skill">PyTorch</span>
+
+            <span class="skill">Streamlit</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROJECTS -->
+
+  <section id="projects">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Featured Projects
+      </h2>
+
+      <p class="section-subtitle">
+        Data Science and AI projects demonstrating machine learning,
+        recommendation systems, forecasting, segmentation and deployment.
+      </p>
+
+
+      <div class="project-grid">
+
+
+        <!-- CUSTOMER CHURN -->
+
+        <div class="card project-card">
+
+          <h3>
+            Customer Churn Prediction
+          </h3>
+
+          <p>
+            Developed a machine learning solution to identify customers
+            at risk of churn using exploratory data analysis, data cleaning,
+            feature engineering and classification models to support
+            customer retention strategies.
+          </p>
+
+          <p class="tech">
+            Python • Pandas • EDA • Scikit-learn • SMOTE • Machine Learning
+          </p>
+
+          <a
+            href="https://github.com/Amrutha-DataScientist/Cutstomer-Churn"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-btn"
+          >
+            View GitHub →
+          </a>
+
+        </div>
+
+
+        <!-- MOVIE RECOMMENDATION -->
+
+        <div class="card project-card">
+
+          <h3>
+            Netflix Movie Recommendation System
+          </h3>
+
+          <p>
+            Developed a personalized movie recommendation system using
+            collaborative filtering and SVD on user-movie ratings.
+            Analyzed movie and ratings data to identify user preferences
+            and generate personalized recommendations.
+          </p>
+
+          <p class="tech">
+            Python • Pandas • SVD • Collaborative Filtering • Scikit-Surprise
+          </p>
+
+          <a
+            href="https://github.com/Amrutha-DataScientist/reccomendation_system"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-btn"
+          >
+            View GitHub →
+          </a>
+
+        </div>
+
+
+        <!-- AIR PASSENGER -->
+
+        <div class="card project-card">
+
+          <h3>
+            Air Passenger Demand Forecasting
+          </h3>
+
+          <p>
+            Developed a time series forecasting solution using stationarity
+            testing, seasonal analysis, logarithmic transformation, ACF/PACF
+            analysis and ARIMA modeling. Evaluated multiple ARIMA parameter
+            combinations and selected a suitable forecasting model using RMSE.
+          </p>
+
+          <p class="tech">
+            Python • Pandas • Statsmodels • ARIMA • Time Series
+          </p>
+
+          <a
+            href="https://github.com/Amrutha-DataScientist/airpassengers-time-series-forecasting"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-btn"
+          >
+            View GitHub →
+          </a>
+
+        </div>
+
+
+        <!-- CUSTOMER SEGMENTATION -->
+
+        <div class="card project-card">
+
+          <h3>
+            Customer Segmentation using K-Means
+          </h3>
+
+          <p>
+            Developed a customer segmentation model using K-Means Clustering
+            to group customers based on spending, order frequency, product
+            purchases and average order value. Derived strategies for
+            cross-selling, upselling and customer retention.
+          </p>
+
+          <p class="tech">
+            Python • Pandas • Scikit-learn • K-Means • Customer Analytics
+          </p>
+
+          <a
+            href="https://github.com/Amrutha-DataScientist/customer_segmentation"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-btn"
+          >
+            View GitHub →
+          </a>
+
+        </div>
+
+
+        <!-- LLM CHATBOT -->
+
+        <div class="card project-card">
+
+          <h3>
+            LLM-Based AI Chatbot
+          </h3>
+
+          <p>
+            Developed a conversational AI chatbot using
+            <strong>OpenAI, Hugging Face and Gemini AI</strong>.
+            Integrated Large Language Models through APIs to generate
+            contextual responses and build practical Generative AI
+            chatbot applications.
+          </p>
+
+          <p class="tech">
+            Python • OpenAI • Hugging Face • Gemini AI • LLMs •
+            Generative AI • APIs • Prompt Engineering
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- TRAINING -->
+
+  <section id="training">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Training & Certification
+      </h2>
+
+      <p class="section-subtitle">
+        Professional Data Science and Artificial Intelligence training.
+      </p>
+
+      <div class="card training-item">
+
+        <h3>
+          Advanced Certification in Data Science & Artificial Intelligence
+        </h3>
+
+        <strong>
+          iHUB DivyaSampark, IIT Roorkee • Intellipaat
+        </strong>
+
+        <p>
+          Advanced training in Python, SQL, Statistics, Machine Learning,
+          Deep Learning, NLP, Generative AI, LLMs, Transformers and
+          Data Visualization. Applying these technologies through
+          hands-on projects involving data cleaning, EDA, feature
+          engineering, model development, evaluation and deployment.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EDUCATION -->
+
+  <section id="education">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Education
+      </h2>
+
+      <div class="education-grid">
+
+        <div class="card education-card">
+
+          <h3>
+            B.Tech - Computer Science & Engineering
+          </h3>
+
+          <p>
+            Ravindra College of Engineering for Women
+          </p>
+
+          <p>
+            CSE • Batch 2021–2025
+          </p>
+
+          <p>
+            75%
+          </p>
+
+        </div>
+
+
+        <div class="card education-card">
+
+          <h3>
+            Intermediate - MPC
+          </h3>
+
+          <p>
+            Narayana Junior College for Women
+          </p>
+
+          <p>
+            2021 • 75.6%
+          </p>
+
+        </div>
+
+
+        <div class="card education-card">
+
+          <h3>
+            SSC
+          </h3>
+
+          <p>
+            Sri Lakshmi High School
+          </p>
+
+          <p>
+            2019 • 9.0 GPA
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CERTIFICATIONS -->
+
+  <section>
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Certifications
+      </h2>
+
+      <div class="cert-grid">
+
+        <div class="card">
+          <h3>Python Certification</h3>
+          <p>Python Programming</p>
+        </div>
+
+        <div class="card">
+          <h3>SQL Certification</h3>
+          <p>SQL & Database Management</p>
+        </div>
+
+        <div class="card">
+          <h3>Power BI Certification</h3>
+          <p>Data Visualization & Business Intelligence</p>
+        </div>
+
+        <div class="card">
+          <h3>Artificial Intelligence</h3>
+          <p>AI & Generative AI</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Let's Connect
+      </h2>
+
+      <p class="section-subtitle">
+        Open to entry-level opportunities in Data Science,
+        Machine Learning, Artificial Intelligence and Data Analytics.
+      </p>
+
+
+      <div class="contact-grid">
+
+
+        <div class="card contact-card">
+
+          <h3>
+            Contact Information
+          </h3>
+
+          <div class="contact-item">
+
+            <strong>
+              Location:
+            </strong>
+
+            <br />
+
+            Andhra Pradesh, India
+
+          </div>
+
+
+          <div class="contact-item">
+
+            <strong>
+              Email:
+            </strong>
+
+            <br />
+
+            <a href="mailto:amruthapreyala@gmail.com">
+              amruthapreyala@gmail.com
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="card contact-card">
+
+          <h3>
+            Online Profiles
+          </h3>
+
+
+          <div class="contact-item">
+
+            <a
+              href="https://github.com/Amrutha-DataScientist"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub →
+            </a>
+
+          </div>
+
+
+          <div class="contact-item">
+
+            <a
+              href="https://www.linkedin.com/in/amrutha-preyala"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn →
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      © 2026 Amrutha P |
+      Data Scientist & Artificial Intelligence
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
